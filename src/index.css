@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  min-height: 100vh; /* Set a minimum height to ensure the background image doesn't get too small */
+  overflow: hidden;
+  background-image: url("../public/bubka.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevent image repetition */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
+  /* Apply the blur effect */
+  backdrop-filter: blur(2px); /* You can adjust the blur radius */
+  -webkit-backdrop-filter: blur(2px); /* For compatibility with some webkit browsers */
+}
