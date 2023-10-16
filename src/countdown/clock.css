@@ -32,7 +32,7 @@
     flex-direction: column;
     align-items:center;
     gap: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     /* background-color: rgb(90, 83, 83);
     opacity: 0.5;
     border-radius: 7%; */
@@ -69,7 +69,7 @@
     .TimeLeft {
       gap: 1rem;
       padding:0.5rem;
-      margin-bottom: 0.8rem;
+      margin-bottom: 2rem;
     }
     .weddingText {
         font-size: 1.8rem;
@@ -90,7 +90,7 @@
     .TimeLeft {
       gap: 0.7em;
       padding:0.15rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 2rem;
     }
     .weddingText {
         font-size: 1.6rem;
