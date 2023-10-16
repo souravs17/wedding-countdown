@@ -11,6 +11,10 @@ body {
   display: grid;
   place-items: center;
   /* Apply the blur effect */
-  backdrop-filter: blur(2px); /* You can adjust the blur radius */
-  -webkit-backdrop-filter: blur(2px); /* For compatibility with some webkit browsers */
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  max-width: 100%; /* Ensure the container never exceeds the screen width */
+  max-height: 100%; /* Ensure the container never exceeds the screen height */
+  margin: 0 auto; /* Center the container horizontally on the screen */
+  overflow: hidden;
 }

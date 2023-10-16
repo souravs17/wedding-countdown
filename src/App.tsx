@@ -1,10 +1,13 @@
-import "./App.css";
-import { countdown } from "./countdown/countdown";
 import Clock from "./countdown/clock";
+import Fireworks from "./fireworks/fireworks";
 
 function App() {
-  countdown();
-  return <Clock />;
+  return (
+    <div className="clock">
+      <Clock />
+      <Fireworks />
+    </div>
+  );
 }
 
 export default App;

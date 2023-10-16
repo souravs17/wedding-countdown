@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { countdown } from "./countdown";
 import Counter from "./counter";
+import "./clock.css";
 
 const Clock = () => {
   const [timeLeft, setTimeLeft] = useState(countdown());
@@ -18,39 +19,36 @@ const Clock = () => {
 
   return (
     <div className="TimeLeft">
+      {/* <div className="weddingText">{process.env.REACT_APP_WEDDING_TEXT}</div> */}
       <div className="block">
         {timeLeft.years ? (
           <Counter
             count={timeLeft.years}
-            label={timeLeft.years > 1 ? "years" : "year"}
+            label={timeLeft.years === 1 ? "year" : "years"}
           />
         ) : null}
         {timeLeft.months ? (
           <Counter
             count={timeLeft.months}
-            label={timeLeft.months > 1 ? "months" : "month"}
+            label={timeLeft.months === 1 ? "month" : "months"}
           />
         ) : null}
         {timeLeft.days ? (
           <Counter
             count={timeLeft.days}
-            label={timeLeft.days > 1 ? "days" : "day"}
+            label={timeLeft.days === 1 ? "day" : "days"}
           />
         ) : null}
       </div>
       <div className="block">
-        {timeLeft.hours ? (
-          <Counter
-            count={timeLeft.hours}
-            label={timeLeft.hours > 1 ? "hours" : "hour"}
-          />
-        ) : null}
-        {timeLeft.minutes ? (
-          <Counter
-            count={timeLeft.minutes}
-            label={timeLeft.minutes > 1 ? "minutes" : "minute"}
-          />
-        ) : null}
+        <Counter
+          count={timeLeft.hours}
+          label={timeLeft.hours === 1 ? "hour" : "hours"}
+        />
+        <Counter
+          count={timeLeft.minutes}
+          label={timeLeft.minutes === 1 ? "minute" : "minutes"}
+        />
         <Counter count={timeLeft.seconds} label="seconds" />
       </div>
     </div>
